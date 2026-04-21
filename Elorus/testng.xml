@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="com.elorus.listeners.elorusListener"></listener>
+</listeners>
+	<test thread-count="5" name="Test">
+	<parameter name="BrowserName" value="chrome"></parameter>
+		<classes>
+	<class name="com.elorus.Scripts.elorusLogin_scripts" />
+	<class name="com.elorus.Scripts.elorusLogout_scripts" />
+	<class name="com.elorus.Scripts.elorusAddContact_scripts"/>
+		</classes>
+	</test> <!--
+	Test -->
+</suite>
